@@ -10,7 +10,11 @@
 //生日放歌
 if((new Date().getMonth()+1)==8 && (new Date().getDate())==17)
 {
-document.write('庆祝长者生日快乐！<br><audio autoplay="autoplay" controls="controls"loop="loop" preload="auto" src="http://m10.music.126.net/20160814221632/467519abd92805882f5ec925b4055b1a/ymusic/f28c/f02c/88c8/457cabb812cb1bb95363df349f8e5205.mp3"></audio><br>');
+document.write('庆祝长者生日快乐！<br>今日续命可得双倍秒数<br><audio autoplay="autoplay" controls="controls"loop="loop" preload="auto" src="http://m10.music.126.net/20160814221632/467519abd92805882f5ec925b4055b1a/ymusic/f28c/f02c/88c8/457cabb812cb1bb95363df349f8e5205.mp3"></audio><br>');
+}
+if((new Date().getMonth()+1)==8 && ((new Date().getDate())>10 || (new Date().getDate())<17) )
+{
+alert("马上就要到17号长者的大寿了，大寿当日续命有惊喜！");
 }
 </script>
 续命成功！+1s√<br>
