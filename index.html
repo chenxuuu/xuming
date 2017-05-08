@@ -74,22 +74,22 @@ $(function(){
 <br><br>
 评论区的精日和美分请滚粗。<br>
 </div>
-    <div id="disqus_thread"></div>
-    <script>
-
-    var disqus_config = function () {
-    this.page.url = "http://chenxuuu.github.io/xuming";
-    this.page.identifier = "时间众筹页";
-    };
-    (function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://shi-jian-zhong-chou.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <br><br>
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href',
+  owner: 'chenxuuu',
+  repo: 'xuming',
+  oauth: {
+    client_id: '68a0f969f6099cfe7a81',
+    client_secret: 'be5c09f1948d7fb52e2bca2e58077d0fde71afef',
+  },
+})
+gitment.render('container')
+</script>
+<br><br>
 build by chenxuuu || run on GitHub || <a href="https://github.com/chenxuuu/xuming">Fork this page</a>
 </body>
 </html>
